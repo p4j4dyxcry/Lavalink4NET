@@ -1,0 +1,18 @@
+server:
+  address: 0.0.0.0
+  port: ${PORT:2333}
+
+lavalink:
+  server:
+    password: ${LAVALINK_SERVER_PASSWORD:youshallnotpass}
+    sources:
+      youtube: false        # v4はYouTubeはプラグインで有効化
+      soundcloud: true
+      bandcamp: true
+      twitch: true
+      vimeo: true
+      http: true
+      local: false
+  plugins:
+    - dependency: "dev.lavalink.youtube:youtube-plugin:1.13.3"
+      repository: "https://maven.lavalink.dev/releases"
